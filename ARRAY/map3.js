@@ -1,4 +1,4 @@
-Array.prototype.map2 = function(callback) {
+Array.prototype.map2 = function(callback, thisArrg) {
     for(let i = 0; i < this.length; i++) {
     newArray.push(callback(this[i], i, this))
     }

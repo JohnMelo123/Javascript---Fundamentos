@@ -1,7 +1,7 @@
 console.log(module.exports === this)
 console.log(module.exports === exports)
 
-thos.a = 1
+this.a = 1
 exports.b = 2
 module.exports.c = 3
 

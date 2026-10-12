@@ -1,5 +1,3 @@
-const { forEach } = require("lodash")
-
 // Função retornada com template string:
 function saudacao (nome) { 
     return 'Olá, ' + nome + '!'
@@ -102,3 +100,26 @@ console.log(repetir(7, 3))
 console.log(repetir(20, 12))
 // Não consegui fazer, foco em estudo no loop 'for'
 // Tentei utilizar 'forEach' , mas ele so percorre os itens de um array que ja existe. 
+
+
+/* Função que recebe número como parametro e retorna uma string com o simbolo "+" ]
+na quantidade especificada no parametro: */
+function simboloMais (numero) { 
+  let resultado = ""
+  for (let c = 0; c < numero; c++) {
+    resultado += "+"
+  }
+  return resultado 
+}
+console.log(simboloMais(2))
+console.log(simboloMais(4))
+/* Mais uma vez.. não utilizei a lógica da estrutura de control: for, para
+aplicar uma ação a cada vez que o contador fosse para o valor seguinte */
+
+/* Função que recebe um Array e retorna o primeiro e o ultimo elemento desse Array 
+como um novo Array: */
+function getFirstAndLastElement(array) {
+  return [array[0], array[array.length - 1]];
+}
+console.log(getFirstAndLastElement([7, 14, "olá"]))
+console.log(getFirstAndLastElement([-100, "aplicativo", 16]))

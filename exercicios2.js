@@ -123,3 +123,15 @@ function getFirstAndLastElement(array) {
 }
 console.log(getFirstAndLastElement([7, 14, "olá"]))
 console.log(getFirstAndLastElement([-100, "aplicativo", 16]))
+
+/* Função que recebe um objeto, e a propriedade desse objeto como parametro; e retorna
+a cópia do objeto sem a propriedade dele: */
+function removerPropriedade(obj, propriedade){
+  const copia = {...obj}
+  delete copia[propriedade]
+  return copia
+}
+console.log(removerPropriedade({a: 1, b: 2}, "a"))
+console.log(removerPropriedade({id: 20, nome: "caneta", descricao: "Não preenchido"}, "descricao"))
+/* O que me faltou para finalizar o código: conhecimento correto acerca do 
+(spread) -> {...obj}, onde foi criado um novo objeto com as mesmas propriedades(uma copia). */

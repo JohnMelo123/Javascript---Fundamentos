@@ -135,3 +135,11 @@ console.log(removerPropriedade({a: 1, b: 2}, "a"))
 console.log(removerPropriedade({id: 20, nome: "caneta", descricao: "Não preenchido"}, "descricao"))
 /* O que me faltou para finalizar o código: conhecimento correto acerca do 
 (spread) -> {...obj}, onde foi criado um novo objeto com as mesmas propriedades(uma copia). */
+
+/* Função que recebe um Array de elementos e retorna um Array somente com os números
+presentes no Array recebido como parametro */
+function filtrarNumeros(array) {
+  return array.filter((item) => typeof item === "number");
+}
+console.log(filtrarNumeros(["Javascript", 1, "3", "Web", 20]))
+console.log(filtrarNumeros(["a", "c"]))

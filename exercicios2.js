@@ -143,3 +143,11 @@ function filtrarNumeros(array) {
 }
 console.log(filtrarNumeros(["Javascript", 1, "3", "Web", 20]))
 console.log(filtrarNumeros(["a", "c"]))
+
+/* Função que recebe um array de números e retorna um array com todos os números pares e que
+também tenham indices pares */
+function getOnlyParesDeIndicesPares(array = []) {
+  return array.filter((valor, i) => valor % 2 === 0 && i % 2 === 0)
+}
+console.log(getOnlyParesDeIndicesPares([1, 2, 3, 4]))    
+console.log(getOnlyParesDeIndicesPares([10, 70, 22, 43])) 

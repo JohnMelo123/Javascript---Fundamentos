@@ -151,3 +151,12 @@ function getOnlyParesDeIndicesPares(array = []) {
 }
 console.log(getOnlyParesDeIndicesPares([1, 2, 3, 4]))    
 console.log(getOnlyParesDeIndicesPares([10, 70, 22, 43])) 
+
+/* Função que recebe um número correspondente a um ano e retorna se ele é bissexto ou não */
+function checarAnoBissexto(ano) {
+  return (ano % 4 === 0 && ano % 100 !== 0) || (ano % 400 === 0)
+}
+console.log(checarAnoBissexto(2020))
+console.log(checarAnoBissexto(2100))
+
+/* forma errada: (ano % 4 == 0 ) || (ano % 100 == 0 && ano % 400 == 0)*/

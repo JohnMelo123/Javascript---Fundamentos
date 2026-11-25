@@ -1,8 +1,12 @@
-const porta = 3000
+const porta = 3003
 
-const express = require('expres')
-const app = express
+const express = require('express')
+const app = express()
 
-app.get('./produtos', (req, res, next) => {
-    res.send({nome: 'notebook', preco: 123.45}) // Converter para JKN
+app.get('/produtos', (req, res, next) => {
+    res.send({nome: 'notebook', preco: 123.45}) // Converter para JSON
+})
+
+app.listen(porta, () => {
+    console.log(`Servidor executando na porta ${porta}.`)
 })
